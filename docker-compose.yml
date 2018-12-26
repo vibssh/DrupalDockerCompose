@@ -6,10 +6,10 @@ services:
     ports:
         - 3306:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=drupal
-      - MYSQL_USER=drupal
-      - MYSQL_PASSWORD=drupal
+      - MYSQL_ROOT_PASSWORD=[Your Password]
+      - MYSQL_DATABASE=[Your DB Name]
+      - MYSQL_USER=[DB User]
+      - MYSQL_PASSWORD=[DB Password]
   php: 
     image: wodby/drupal-php:7.1-2.1.0
     depends_on:
